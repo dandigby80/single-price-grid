@@ -1,0 +1,159 @@
+/* Reset */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body Styling */
+
+body{
+  /* font-size: 16px; */
+  font-family: 'Karla', sans-serif;
+  background: var(--LightGray);
+}
+
+/* Utilities */
+
+:root{
+
+  /* Colours */
+
+--Cyan: hsl(179, 62%, 43%);
+--BrightYellow: hsl(71, 73%, 54%);
+--LightGray: hsl(204, 43%, 93%);
+--GrayishBlue: hsl(218, 22%, 67%);
+}
+
+ul{
+  list-style: none;
+}
+
+.p-thick{
+  padding: 42px;
+}
+
+h2,h3{
+  /* padding: 5px; */
+  margin-bottom: 20px;
+}
+
+.card-header p{
+  color: var(--GrayishBlue);
+}
+
+.card-header h2{
+  color: var(--Cyan);
+}
+
+.card-header h3{
+  color: var(--BrightYellow);
+}
+
+.box-1 h3{
+  font-weight: 400;
+}
+
+.box-1 span{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.box-1 p{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.container{
+  display: flex;
+  max-width: 635px;
+  margin: 70px auto;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px 10px hsla(218, 22%, 67%, 20%);
+}
+
+.card .card-header{
+  background: #fff;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  width: 100%;
+}
+
+.card-content{
+  display: flex;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.box-1{
+  border-bottom-left-radius: 6px;
+}
+
+.box-2{
+  border-bottom-right-radius: 6px;
+}
+
+.card-content .box-1{
+  width: 50%;
+  background: var(--Cyan);
+  color: #fff;
+}
+
+.card-content .box-2{
+  width: 50%;
+  background: #4abebd;
+  color: #fff;
+}
+
+.box-2 h3{
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.btn{
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 16px 70px;
+  background: var(--BrightYellow);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: hsl(71, 73%, 54%, 80%);
+}
+
+@media(max-width: 1024px){
+  .container{
+    
+    margin: 150px auto;
+  }
+}
+
+@media(max-width: 375px){
+  .container{
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+  .card-content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-content .box-1,
+  .card-content .box-2{
+    width: 100%;
+  }
+}
+
